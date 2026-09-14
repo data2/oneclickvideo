@@ -2,8 +2,15 @@
 
 ## 一键创建环境
 
-conda env create -f environment.yml
+conda create -n one-click-video python=3.11 pip -y
 
 conda activate one-click-video
+
+pip install moviepy edge-tts gradio requests -i https://mirrors.aliyun.com/pypi/simple/
+
+python -c "import gradio, edge_tts, moviepy; print('OK')"
+
+
+
 
 

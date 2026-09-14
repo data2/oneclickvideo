@@ -8,8 +8,13 @@ conda activate one-click-video
 
 pip install moviepy edge-tts gradio requests 
 
+## 验证
+
 python -c "import gradio, edge_tts, moviepy; print('OK')"
 
+## 访问地址
+
+浏览器打开 http://127.0.0.1:7861
 
 
 

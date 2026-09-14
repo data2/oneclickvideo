@@ -1,0 +1,28 @@
+name: one-click-video
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - ffmpeg
+  - pip:
+      # 视频处理
+      - moviepy
+      - imageio-ffmpeg
+      # TTS 与字幕
+      - edge-tts
+      - faster-whisper
+      # 数字人
+      - opencv-python
+      - onnxruntime
+      - soundfile
+      # Web 界面
+      - gradio
+      # HTTP 请求
+      - requests
+      - httpx
+      # 工具
+      - loguru
+      - tqdm
+      - pyyaml
